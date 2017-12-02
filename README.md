@@ -1,5 +1,17 @@
 # StardewScripts
 
+Example
+-------
+
+    $c = gc crops.txt
+    $s = ""
+    $c|%{
+        $t = .\Build-Tables.ps1 -crop $_
+        $s += "`n==$($_)==`n$t`n"
+    }
+    $s | clip
+
+
 Sources
 -------
 
